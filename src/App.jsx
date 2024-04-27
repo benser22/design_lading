@@ -12,7 +12,7 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar />
       <Layout>
         <Hero />
         <Products />
@@ -22,7 +22,7 @@ function App() {
         <Future />
         <LastSection />
       </Layout>
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
