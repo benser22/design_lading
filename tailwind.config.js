@@ -9,7 +9,9 @@ export default {
         "light-blue-custom": "#47BEBA",
       },
       fontFamily: {},
-      screens: {},
+      screens: {
+        mini: "320px",
+      },
     },
   },
   plugins: [],

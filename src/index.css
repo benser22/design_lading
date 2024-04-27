@@ -15,23 +15,8 @@
   animation: fadeIn 0.2s ease-in-out;
 }
 
-/* body {
-  background-image: url("https://res.cloudinary.com/djzp2k8gd/image/upload/v1714069986/drone_landing/backgrounds/bg-app.png");
-  background-repeat: repeat;
-} */
-
-h1 {
+body {
   font-family: "Inter", sans-serif;
-}
-
-p,
-h2,
-button {
-  font-family: "Open Sans", sans-serif;
-}
-
-h3 {
-  font-family: "DM Sans", sans-serif;
 }
 
 .shadow-only-painted {
@@ -48,18 +33,28 @@ button:hover {
 
 button:active {
   filter: saturate(0.8);
-  color: darkslategrey;
-  transition: filter 1s;
+  transition: filter 0.3s;
+}
+
+.button-custom {
+  background-color: rgba(71, 190, 186, 0.8);
+  color: white;
+  padding-block: 0.6rem;
+  padding-inline: 1.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.button-custom-small {
+  background-color: rgba(71, 190, 186, 0.8);
+  color: white;
+  border-radius: 0.375rem;
+  cursor: pointer;
 }
 
 /* 
-.orange-button {
-  background-color: #f46d21;
-  color: white;
-  padding-block: 0.375rem;
-  padding-inline: 2.25rem;
-  border-radius: 0.375rem;
-  cursor: pointer;
+.button-custom:hover {
+  color: rgb(36, 36, 36);
 }
 .transparent-button {
   background-color: transparent;

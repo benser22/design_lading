@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 import data from "../../data.json";
 
 const MenuMobile = ({ isOpen, onClick }) => {
+  const [isOpenDrop, setIsOpenDrop] = useState({});
+
+  const handleDropdownToggle = (itemId) => {
+    setIsOpenDrop((prevState) => ({
+      ...prevState,
+      [itemId]: !prevState[itemId],
+    }));
+  };
+
   return (
     <div
       className={`${
@@ -12,39 +22,104 @@ const MenuMobile = ({ isOpen, onClick }) => {
     >
       <ul
         className={`fixed left-0 top-0 px-4 py-5 h-screen w-[60vw] flex flex-col gap-4 
-        items-start text-white bg-black shadow-md shadow-white`}
+        items-start  text-blue-custom bg-white shadow-md shadow-white`}
       >
         <div className="flex">
           <a href="/">
             <img
-              src={data["logo-black"].url}
-              alt={data["logo-black"].alt}
+              src={data["section-header"].logo.image.url}
+              alt={data["section-header"].logo.image.alt}
               className="h-[36px] cursor-pointer mx-auto mt-4"
-              style={{ filter: "invert(1)" }}
             />
             <hr className="mt-6 w-[50vw]"></hr>
           </a>
         </div>
-        <div className="ml-[2vw] flex flex-col items-left justify-between gap-12 mt-6 w-full">
-          {data["section-header"].navbar.map((item, index) => (
+        <div className="ml-[2vw] flex flex-col gap-12 mt-6 w-full">
+          {data["section-header"].links.map((item, index) => (
             <Link
               to={item.href}
               key={index}
-              className="flex items-center gap-4 hover:text-gray-custom cursor-pointer"
+              className="flex flex-col gap-4 hover:text-red-custom active:text-red-custom cursor-pointer"
               smooth={true}
               duration={700}
               spy={false}
               offset={-80}
             >
-              <img
-                src={item.icon}
-                alt={item.alt}
-                className="w-[26px] h-[26px]"
-                style={{ filter: "invert(1)" }}
-              />
-              <p className="font-bold">{item.text}</p>
+              <div
+                className="flex flex-col gap-1.5 cursor-pointer"
+                onClick={() => handleDropdownToggle(item.id)}
+              >
+                <div className="flex items-center gap-2">
+                  {item.icon && (
+                    <img
+                      src={item.icon}
+                      alt={item.alt}
+                      className="w-[26px] h-[26px]"
+                    />
+                  )}
+                  <p
+                    className="min-w-max text-md hover:text-red-custom sm:text-[12px] lg:text-[16px] 2xl:text-[18px] w-max"
+                    key={item.id}
+                  >
+                    {item.title}
+                  </p>
+                  {item.isDropdown && (
+                    <img
+                      src={data["section-header"]["dropdow-icon"].url}
+                      alt={data["section-header"]["dropdow-icon"].alt}
+                      className="h-[6px] mr-2"
+                      style={{
+                        transform: isOpenDrop[item.id]
+                          ? "rotate(180deg)"
+                          : "rotate(0deg)",
+                        transition: "transform 0.2s ease-in-out",
+                      }}
+                    />
+                  )}
+                </div>
+              </div>
+              {item.isDropdown && isOpenDrop[item.id] && (
+                <div className="flex flex-col space-y-3 w-full min-w-max">
+                  {item.items.map((option, index) => (
+                    <p
+                      key={index}
+                      className="ml-8 truncate text-blue-custom cursor-pointer hover:text-red-custom"
+                    >
+                      {option.text}
+                    </p>
+                  ))}
+                </div>
+              )}
             </Link>
           ))}
+          <a href="#" target="_blank">
+            <div className="flex items-center gap-2">
+              {data["section-header"]["login-icon"] && (
+                <img
+                  src={data["section-header"]["login-icon"]}
+                  alt={data["section-header"].login}
+                  className="w-[26px] h-[26px]"
+                />
+              )}
+              <p className="min-w-max text-md hover:text-red-custom active:text-red-custom">
+                {data["section-header"].login}
+              </p>
+            </div>
+          </a>
+          <a href="#" target="_blank">
+            <div className="flex items-center gap-2">
+              {data["section-header"]["login-button-icon"] && (
+                <img
+                  src={data["section-header"]["login-button-icon"]}
+                  alt={data["section-header"]["login-button"]}
+                  className="w-[26px] h-[26px]"
+                />
+              )}
+              <button className="mr-auto min-w-max text-md hover:text-red-custom active:text-red-custom">
+                {data["section-header"]["login-button"]}
+              </button>
+            </div>
+          </a>
         </div>
       </ul>
     </div>

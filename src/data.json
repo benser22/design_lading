@@ -17,8 +17,12 @@
         "title": "user cases",
         "href": "cases",
         "isDropdown": true,
-        "items": ["case 1", "case 2", "case 3"],
-        "icon": "",
+        "items": [
+          { "id": 1, "text": "case 1", "link": "" },
+          { "id": 2, "text": "case 2", "link": "" },
+          { "id": 3, "text": "case 3", "link": "" }
+        ],
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255278/ia_landing/mobile%20icons/flrxfwem7muuxdrjukjo.png",
         "alt": "user-cases icon"
       },
       {
@@ -26,8 +30,12 @@
         "title": "resources",
         "href": "resources",
         "isDropdown": true,
-        "items": ["resources 1", "resources 2", "resources 3"],
-        "icon": "",
+        "items": [
+          { "id": 1, "text": "resource 1", "link": "" },
+          { "id": 2, "text": "resource 2", "link": "" },
+          { "id": 3, "text": "resource 3", "link": "" }
+        ],
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/cy2zvnuwnvw4tzpjuhny.png",
         "alt": "icon resources"
       },
       {
@@ -36,21 +44,23 @@
         "href": "demos",
         "isDropdown": false,
         "items": ["", "", ""],
-        "icon": "",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/ledbltcxpajnrui7qaci.png",
         "alt": "icon demos"
       },
       {
         "id": 4,
-        "text": "pricing",
+        "title": "pricing",
         "href": "pricing",
         "isDropdown": false,
         "items": ["", "", ""],
-        "icon": "",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/npdt3odrgjp3bfbr9bpg.png",
         "alt": "icon pricing"
       }
     ],
     "login": "Login",
-    "login-button": "Get Started"
+    "login-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255278/ia_landing/mobile%20icons/wrrsytxf19dnx6ofzob8.png",
+    "login-button": "Get Started",
+    "login-button-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255277/ia_landing/mobile%20icons/af67ngppd7qdg6su1hjk.png"
   },
   "section-hero": {
     "bg": {

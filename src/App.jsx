@@ -12,7 +12,8 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <main>
-      {/* <Navbar />
+      <Navbar />
+      {/* 
       <Layout>
         <Hero />
         <Products />
