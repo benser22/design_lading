@@ -1,249 +1,419 @@
 {
   "section-header": {
-    "navbar": [
+    "logo": {
+      "image": {
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714206350/ia_landing/logos/logo.png",
+        "alt": "logo image"
+      },
+      "logo-button": "We’re Hiring"
+    },
+    "dropdow-icon": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207472/ia_landing/dropdown.png",
+      "alt": "icon drop"
+    },
+    "links": [
       {
         "id": 1,
-        "text": "Home",
-        "href": "home",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714114243/drone_landing/mobile-icons/home-icon.png",
-        "alt": "icon home"
+        "title": "user cases",
+        "href": "cases",
+        "isDropdown": true,
+        "items": ["case 1", "case 2", "case 3"],
+        "icon": "",
+        "alt": "user-cases icon"
       },
       {
         "id": 2,
-        "text": "Products",
-        "href": "products",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714063165/drone_landing/mobile-icons/products.png",
-        "alt": "icon products"
+        "title": "resources",
+        "href": "resources",
+        "isDropdown": true,
+        "items": ["resources 1", "resources 2", "resources 3"],
+        "icon": "",
+        "alt": "icon resources"
       },
       {
         "id": 3,
-        "text": "Explore",
-        "href": "explore",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714114244/drone_landing/mobile-icons/explore-icon.png",
-        "alt": "icon why"
+        "title": "weekly demos",
+        "href": "demos",
+        "isDropdown": false,
+        "items": ["", "", ""],
+        "icon": "",
+        "alt": "icon demos"
       },
       {
         "id": 4,
-        "text": "Overview",
-        "href": "overview",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714059956/drone_landing/mobile-icons/why-us.png",
-        "alt": "icon overview"
-      },
-      {
-        "id": 5,
-        "text": "Projects",
-        "href": "project",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714114846/drone_landing/mobile-icons/projects.png",
-        "alt": "icon project"
-      },
-      {
-        "id": 6,
-        "text": "Future",
-        "href": "future",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714059955/drone_landing/mobile-icons/future.png",
-        "alt": "icon future"
-      },
-      {
-        "id": 7,
-        "text": "Accessories",
-        "href": "accessories",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714114243/drone_landing/mobile-icons/accesories-icon.png",
-        "alt": "icon accessories"
-      },
-      {
-        "id": 8,
-        "text": "Contact Us",
-        "href": "contact",
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714059955/drone_landing/mobile-icons/contac-us.png",
-        "alt": "icon contact"
+        "text": "pricing",
+        "href": "pricing",
+        "isDropdown": false,
+        "items": ["", "", ""],
+        "icon": "",
+        "alt": "icon pricing"
       }
     ],
-    "button": {}
+    "login": "Login",
+    "login-button": "Get Started"
   },
   "section-hero": {
-    "title": "Document your surroundings from above",
-    "subtitle": "لوريم ايبسوم دولار سيت أميت, كونسيكتيتور أدايبا يسكينج أليايت, سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم, كيواس نوستريد",
-    "stamp": "إشتري",
     "bg": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714064507/drone_landing/backgrounds/bg-hero.png",
-      "alt": "bg hero image"
-    }
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/f_auto,q_auto/v1/ia_landing/hero/bg",
+      "alt": "hero bg"
+    },
+    "title": "Silika Helps",
+    "title2": "Marketing Agencies!",
+    "subtitle": "At nulla tristique facilisis augue. Lectus diam dignissim erat blandit pellentesque egestas nulla a. Nulla consectetur nunc egestas metus pellentesque.",
+    "button1": "Get Started",
+    "button2": "How It Works"
   },
-  "section-products": [
+  "section-slider": [
     {
       "id": 1,
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714075602/drone_landing/products/card1.png",
-      "alt": "card1 image",
-      "epigraph": "DJI Motion Controller [1]",
-      "title": "Get a Feel for Flying",
-      "paragraph": "With the DJI Motion Controller, intuitive flight is in your hands. [1] Squeeze the trigger and bolt forward or turn a corner with the swivel of your wrist. The controls are easy to use and provide a totally unique way to fly.",
-      "line-p": "*Click to Learn More About the New DJI RC Motion 2",
-      "button": "Learn More"
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207923/ia_landing/slider/azid7wpbslt7gejwb6or.png",
+      "alt": "logo1 image"
     },
     {
       "id": 2,
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714071478/drone_landing/products/card2.png",
-      "alt": "card2 image",
-      "epigraph": "DJI Motion Controller [1]",
-      "title": "Get a Feel for Flying",
-      "paragraph": "With the DJI Motion Controller, intuitive flight is in your hands. [1] Squeeze the trigger and bolt forward or turn a corner with the swivel of your wrist. The controls are easy to use and provide a totally unique way to fly.",
-      "line-p": "*Click to Learn More About the New DJI RC Motion 2",
-      "button": "Learn More"
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207923/ia_landing/slider/yhfgy28c4z8hfw9voyi3.png",
+      "alt": "logo2 image"
     },
     {
       "id": 3,
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714071478/drone_landing/products/card3.png",
-      "alt": "card3 image",
-      "epigraph": "DJI Motion Controller [1]",
-      "title": "Get a Feel for Flying",
-      "paragraph": "With the DJI Motion Controller, intuitive flight is in your hands. [1] Squeeze the trigger and bolt forward or turn a corner with the swivel of your wrist. The controls are easy to use and provide a totally unique way to fly.",
-      "line-p": "*Click to Learn More About the New DJI RC Motion 2",
-      "button": "Learn More"
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207922/ia_landing/slider/t3ylsyshjcsuuborlami.png",
+      "alt": "logo3 image"
     },
     {
       "id": 4,
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714072139/drone_landing/products/card4.png",
-      "alt": "card4 image",
-      "epigraph": "DJI Motion Controller [1]",
-      "title": "Get a Feel for Flying",
-      "paragraph": "With the DJI Motion Controller, intuitive flight is in your hands. [1] Squeeze the trigger and bolt forward or turn a corner with the swivel of your wrist. The controls are easy to use and provide a totally unique way to fly.",
-      "line-p": "*Click to Learn More About the New DJI RC Motion 2",
-      "button": "Learn More"
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207922/ia_landing/slider/s19v3rzgw3h8pql219zc.png",
+      "alt": "logo4 image"
     }
   ],
-  "section-explore": {
-    "bg": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714079395/drone_landing/explore/bg.png",
-      "alt": "bg explore image"
+  "section-about": {
+    "video": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207689/ia_landing/video-image.png",
+      "alt": "video image"
     },
-    "column1": [
-      {
-        "title": "30 ms",
-        "subtitle": "Lowest Video Transmission Latency [12]"
-      },
-      { "title": "H.265", "subtitle": "Video Transmission Coding" },
-      { "title": "100 fps", "subtitle": "Max Video Transmission Frame Rate" }
-    ],
-    "column2": [
-      { "title": "50 Mbps", "subtitle": "Max Video Transmission Bitrate [14]" },
-      { "title": "10 km", "subtitle": "Max Video Transmission Range [13]" },
-      { "title": "H.265", "subtitle": "Video Transmission Coding" }
-    ]
+    "title": "More About Us",
+    "subtitle": "Professional & Team Choose Copy.Ai",
+    "paragraph": "Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper",
+    "button": "Get Started"
   },
-  "section-overview": {
-    "bg": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714082368/drone_landing/overview/bg.png",
-      "alt": "bg overview image"
-    }
-  },
-  "section-project": {
-    "title": "Be part of us",
-    "paragraph": "Discover our premium drone collection, tailored to enhance your aerial photography and videography. From beginner-friendly models to professional-grade quadcopters, find everything you need to capture breathtaking shots. Plus, discover a variety of drone components to customize and optimize performance.",
-    "products": [
+  "section-features": {
+    "title": "Our Features",
+    "cards": [
       {
-        "imageUrl": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714089377/drone_landing/project/ui3ztqn8ow73y7so6ux1.webp",
-        "alt": "Drone Product 1",
-        "title": "Beginner Drones",
-        "subtitle": "Easy to Fly",
-        "description": "Our beginner drones are tailored for new pilots eager to explore aerial photography. With user-friendly controls and built-in stability, these drones make capturing stunning footage a breeze, allowing beginners to dive into the world of aerial imaging with ease.",
-        "button": "READ MORE",
-        "button-back": "READ LESS"
+        "id": 1,
+        "title": "Blog Content",
+        "subtitle": "Write optimized blog posts in a fraction of the time",
+        "action": "Try Blog Content ->",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/blog%20content.png",
+        "alt": "Blog content icon"
       },
       {
-        "imageUrl": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714088685/drone_landing/project/2.webp",
-        "alt": "Drone Product 2",
-        "title": "Professional Quadcopters",
-        "subtitle": "Advanced Features",
-        "description": "Our professional quadcopters are equipped with cutting-edge technology and advanced features, delivering unparalleled performance and image quality. Take your aerial photography and videography to the next level with our top-of-the-line drones.",
-        "button": "READ MORE",
-        "button-back": "READ LESS"
+        "id": 2,
+        "title": "Article",
+        "subtitle": "Write optimized blog posts in a fraction of the time",
+        "action": "Try Blog Content ->",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/article.png",
+        "alt": "Article icon"
       },
       {
-        "imageUrl": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714088685/drone_landing/project/3.webp",
-        "alt": "Drone Product 3",
-        "title": "Mini Drones",
-        "subtitle": "Compact and Agile",
-        "description": "Our mini drones are perfect for indoor flights or capturing dynamic shots in tight spaces. Despite their small size, these drones pack a punch with their agility and maneuverability, offering a unique perspective for your aerial imaging projects.",
-        "button": "READ MORE",
-        "button-back": "READ LESS"
+        "id": 3,
+        "title": "Content Writing",
+        "subtitle": "Write optimized blog posts in a fraction of the time",
+        "action": "Try Blog Content ->",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/content%20writing.png",
+        "alt": "Writing icon"
       },
       {
-        "imageUrl": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714088685/drone_landing/project/4.webp",
-        "alt": "Drone Product 4",
-        "title": "Foldable Drones",
-        "subtitle": "Portable and Versatile",
-        "description": "Our foldable drones are designed for adventurers on the go. With their compact and foldable design, you can easily carry them anywhere and unleash their aerial capabilities whenever inspiration strikes. Explore new horizons with our versatile foldable drones.",
-        "button": "READ MORE",
-        "button-back": "READ LESS"
+        "id": 4,
+        "title": "Seo",
+        "subtitle": "Write optimized blog posts in a fraction of the time",
+        "action": "Try Blog Content ->",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/seo.png",
+        "alt": "Seo icon"
+      },
+      {
+        "id": 5,
+        "title": "Design",
+        "subtitle": "Write optimized blog posts in a fraction of the time",
+        "action": "Try Blog Content ->",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/design.png",
+        "alt": "Design icon"
+      },
+      {
+        "id": 6,
+        "title": "Coding",
+        "subtitle": "Write optimized blog posts in a fraction of the time",
+        "action": "Try Blog Content ->",
+        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/coding.png",
+        "alt": "Coding icon"
       }
     ]
   },
-  "section-future": {
-    "title": "A Breakthrough in FPV Visuals",
-    "subtitle": "Equipped with a 1/1.7-inch CMOS sensor, DJI Avata supports 4K ultra-wide-angle recording with an f/2.8 aperture.",
-    "image": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714090986/drone_landing/future/image.png",
-      "alt": "battery image"
+  "section-say": {
+    "title": "Say ‘Goodbye’ To The Blank Page",
+    "title2": "For Good",
+    "subtitle": "Get your free account today",
+    "button1": "signup with google",
+    "google-icon": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202047/ia_landing/icons/google.png",
+      "alt": "google icon"
     },
-    "column": [
+    "button2": "signup with email",
+    "option": "or",
+    "message": "No Credit Card Required"
+  },
+  "section-testimonials": {
+    "title": "Let’s See What Our Clients Says",
+    "clients": [
       {
-        "title": "4K/60fps [6]",
-        "subtitle": "Video"
+        "id": 1,
+        "title": "Brooklyn Simmons",
+        "role": "Nursing Assistant",
+        "paragraph": "Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper",
+        "image": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714210100/ia_landing/testimonials/1.png",
+        "alt": "image client"
       },
-      { "title": "RockSteady 2.0", "subtitle": "EIS" },
-      { "title": "D-Cinelike", "subtitle": "Color Mode" },
-      { "title": "1/1.7-inch", "subtitle": "Sensor" },
-      { "title": "155°", "subtitle": "Super-Wide FOV" },
-      { "title": "HorizonSteady", "subtitle": "EIS" }
+      {
+        "id": 2,
+        "title": "Steve Henderson",
+        "role": "Mathematics Teacher",
+        "paragraph": "Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper",
+        "image": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714210100/ia_landing/testimonials/3.png",
+        "alt": "image client"
+      },
+      {
+        "id": 3,
+        "title": "Lorena Ramos",
+        "role": "Software Engineer",
+        "paragraph": "Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper",
+        "image": "https://res.cloudinary.com/djzp2k8gd/image/upload/f_webp,fl_awebp,q_auto/v1714210100/ia_landing/testimonials/2",
+        "alt": "image client"
+      },
+      {
+        "id": 4,
+        "title": "Robert Smith",
+        "role": "Executive Chef",
+        "paragraph": "Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper",
+        "image": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714210100/ia_landing/testimonials/4.png",
+        "alt": "image client"
+      }
     ]
   },
-  "section-last": {
-    "stamp": "إشتري",
-    "image": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714102099/drone_landing/last/nazqdbycj20mc316rz9t.png",
-      "alt": "lastSection image"
+  "section-how": {
+    "title": "How it works",
+    "checks-icon": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714212358/ia_landing/icons/check.png",
+      "alt": "check icon"
     },
-    "image2": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714102711/drone_landing/last/image2.png",
-      "alt": "lastSection image2"
-    },
-    "logo": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714111480/drone_landing/last/logo-transparent.png",
-      "alt": "logo image"
+    "timeline": {
+      "stage 1": {
+        "id": 1,
+        "title": "Enter your copywrite project",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra est purus eu tempor tincidunt commodo.",
+        "checks": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "Quam duis viverra amet, ultrices risus quis integer nec nulla.",
+          "Tortor turpis nibh viverra nunc bibendum."
+        ],
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202983/ia_landing/how/img1.webp",
+        "alt": "stage1 image"
+      },
+      "stage 2": {
+        "id": 2,
+        "title": "Genarate Idea",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra est purus eu tempor tincidunt commodo.",
+        "checks": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "Quam duis viverra amet, ultrices risus quis integer nec nulla.",
+          "Tortor turpis nibh viverra nunc bibendum."
+        ],
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202983/ia_landing/how/img2.webp",
+        "alt": "stage2 image"
+      },
+      "stage 3": {
+        "id": 3,
+        "title": "Copy & Use",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra est purus eu tempor tincidunt commodo.",
+        "checks": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "Quam duis viverra amet, ultrices risus quis integer nec nulla.",
+          "Tortor turpis nibh viverra nunc bibendum."
+        ],
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202983/ia_landing/how/img3.webp",
+        "alt": "stage3 image"
+      },
+      "stage 4": {
+        "id": 4,
+        "title": "Finalize Project",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra est purus eu tempor tincidunt commodo.",
+        "checks": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "Quam duis viverra amet, ultrices risus quis integer nec nulla.",
+          "Tortor turpis nibh viverra nunc bibendum."
+        ],
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202983/ia_landing/how/img4.webp",
+        "alt": "stage4 image"
+      }
     }
   },
-  "section-contact": {
-    "text": "Get in touch! Enter your email below to reach out to us.",
-    "input_placeholder": "Enter your email",
-    "button": "Contact Us",
-    "error": "Please enter a valid email address."
+  "section-last": {
+    "title": "Ready to level-up?",
+    "subtitle": "Id ipsum amet nibh dolor mi ac diam pellentesque.",
+    "button": "Get Started - It’s Free",
+    "checks": [
+      "No Credit Card Required",
+      "30 credits on sign up",
+      "90+ contents type to explore"
+    ]
   },
   "section-footer": {
-    "trademark": "FREE DRONE",
-    "slogan": "Unlock the Skies",
-    "copy": "All Rights Reserved 2024",
-    "design": "Designed by",
-    "designer": "Robert Smith",
-    "logo": {
-      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714055816/drone_landing/logo/zl3kehgakmqi9icgnb6o.png",
+    "product": {
+      "title": "Product",
+      "links": [
+        {
+          "id": 1,
+          "text": "Login",
+          "url": "#"
+        },
+        {
+          "id": 2,
+          "text": "Pricing",
+          "url": "#"
+        },
+        {
+          "id": 3,
+          "text": "Copy ai Reviews",
+          "url": "#"
+        },
+        {
+          "id": 4,
+          "text": "Alternatives",
+          "url": "#"
+        },
+        {
+          "id": 5,
+          "text": "25+ Languages",
+          "url": "#"
+        },
+        {
+          "id": 6,
+          "text": "Free Ai Tools",
+          "url": "#"
+        }
+      ]
+    },
+    "company": {
+      "title": "Company",
+      "links": [
+        {
+          "id": 1,
+          "text": "Blog",
+          "url": "https://www.blogger.com/about/?hl=es"
+        },
+        {
+          "id": 2,
+          "text": "Careers",
+          "url": "#"
+        },
+        {
+          "id": 3,
+          "text": "Community",
+          "url": "#"
+        },
+        {
+          "id": 4,
+          "text": "Twitter",
+          "url": "https://twitter.com/"
+        },
+        {
+          "id": 5,
+          "text": "Linkedin",
+          "url": "https://linkedin.com/"
+        },
+        {
+          "id": 6,
+          "text": "Affiliate Program",
+          "url": "#"
+        }
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "links": [
+        {
+          "id": 1,
+          "text": "Weekly Deos",
+          "url": "#"
+        },
+        {
+          "id": 2,
+          "text": "Contact Us",
+          "url": "mailto:example@example.com"
+        },
+        {
+          "id": 3,
+          "text": "Report a Bug",
+          "url": "#"
+        },
+        {
+          "id": 4,
+          "text": "Report an Outage",
+          "url": "#"
+        },
+        {
+          "id": 5,
+          "text": "Request a New Feature",
+          "url": "#"
+        }
+      ]
+    },
+    "user-cases": {
+      "title": "User Cases",
+      "links": [
+        {
+          "id": 1,
+          "text": "For Blog Writers",
+          "url": "#"
+        },
+        {
+          "id": 2,
+          "text": "For Social Media",
+          "url": "#"
+        },
+        {
+          "id": 3,
+          "text": "Managers",
+          "url": "#"
+        },
+        {
+          "id": 4,
+          "text": "Report",
+          "url": "#"
+        }
+      ]
+    },
+    "logo-white": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207440/ia_landing/logos/logo-w.png",
       "alt": "logo image"
+    },
+    "copywrite": "© 2022 copy ai, Inc",
+    "privacy": "Privacy Notice",
+    "terms": "Terms of service",
+    "social-media": {
+      "facebook": {
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714215273/ia_landing/icons/facebook.png",
+        "alt": "facebook icon",
+        "link": "https://www.facebook.com/pages/create/"
+      },
+      "linkedin": {
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714215273/ia_landing/icons/instagram.png",
+        "alt": "linkedin icon",
+        "link": "https://www.linkedin.com/signup"
+      },
+      "twitter": {
+        "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714215273/ia_landing/icons/twitter.png",
+        "alt": "twitter icon",
+        "link": "https://twitter.com/userrandom"
+      }
     }
-  },
-  "logo": {
-    "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714055816/drone_landing/logo/zl3kehgakmqi9icgnb6o.png",
-    "alt": "logo image"
-  },
-  "logo-black": {
-    "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714058469/drone_landing/logo/od65ykasgbtc4ezmimpw.png",
-    "alt": "logo image"
-  },
-  "contact": {
-    "email": "example@example.com"
-  },
-  "blog": {
-    "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714111452/drone_landing/blog/blog-icon.png",
-    "title": "Blog",
-    "text": "Visit our blog!",
-    "url": "https://www.blogger.com/about/?hl=es"
   }
 }
