@@ -7,21 +7,21 @@ function Hero() {
         style={{
           backgroundImage: `url(${data["section-hero"].bg.url})`,
           backgroundSize: "cover",
-          width: "100%",
+          width: "100vw",
         }}
       >
-        <div className="pt-20 pb-52 container">
+        <div className="pt-2 lg:pt-20 pb-12 sm:pb-52 container max-w-[100vw]">
           <div className="flex flex-col mx-auto text-center mt-44">
-            <h1 className="text-blue-custom font-bold text-6xl">
+            <h1 className="text-blue-custom font-bold text-xl mini:text-3xl sm:text-5xl md:text-6xl">
               {data["section-hero"].title}
             </h1>
-            <h1 className="text-blue-custom font-bold text-6xl">
+            <h1 className="text-blue-custom font-bold text-xl mini:text-3xl sm:text-5xl md:text-6xl">
               {data["section-hero"].title2}
             </h1>
             <p className="text-gray-custom mt-4 w-1/2 mx-auto">
               {data["section-hero"].subtitle}
             </p>
-            <div className="flex items-center mt-8 mx-auto gap-8">
+            <div className="min-w-max overflow-hidden flex items-center flex-col mini:flex-row mt-8 mx-auto gap-8">
               <button className="button-custom">
                 {data["section-hero"].button1}
               </button>
