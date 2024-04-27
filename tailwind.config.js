@@ -4,18 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        // "blue-custom": "#192A68",
-        "light-blue-custom": "#217BF4",
-        "green-custom": "#00FF29",
-        "gray-custom": "#656464",
+        "blue-custom": "#160647",
+        "red-custom": "#F22E52",
+        "light-blue-custom": "#47BEBA",
       },
-      fontFamily: {
-        // sans: ["Poppins", "sans-serif"],
-      },
-      screens: {
-        break: "1280px",
-        break2: "1535px",
-      },
+      fontFamily: {},
+      screens: {},
     },
   },
   plugins: [],
