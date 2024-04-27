@@ -13,16 +13,16 @@ function App() {
   return (
     <main>
       <Navbar />
-      {/* 
       <Layout>
         <Hero />
+      </Layout>
+      {/* 
         <Products />
         <Explore />
         <Overview />
         <Project />
         <Future />
         <LastSection />
-      </Layout>
       <Footer /> */}
     </main>
   );

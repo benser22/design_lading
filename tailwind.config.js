@@ -7,6 +7,7 @@ export default {
         "blue-custom": "#160647",
         "red-custom": "#F22E52",
         "light-blue-custom": "#47BEBA",
+        "gray-custom": "#6C6C6C",
       },
       fontFamily: {},
       screens: {

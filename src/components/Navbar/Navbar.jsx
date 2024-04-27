@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed z-[98] top-0 left-0 w-full px-8 xl:px-16 py-2 flex justify-between items-center h-[78px] text-blue-custom bg-transparent shadow-sm`}
+      className={`fixed z-[98] top-0 left-0 w-full px-8 xl:px-16 py-2 flex justify-between items-center h-[78px] text-blue-custom bg-transparent`}
       style={{ backdropFilter: "blur(2px)" }}
     >
       <div className="flex items-end justify-between w-full">
@@ -82,10 +82,7 @@ const Navbar = () => {
                 </div>
               )}
               {item.isDropdown && isOpenDrop[item.id] && (
-                <div
-                  className="absolute p-2 top-full mt-1 space-y-5 bg-white bg-opacity-80 left-0 z-[100] w-full min-w-max shadow-md"
-                  style={{ backdropFilter: "blur(2px)" }}
-                >
+                <div className="absolute p-2 top-full mt-1 space-y-5 bg-white rounded-md bg-opacity-[98%] left-0 z-[100] w-full min-w-max shadow-md">
                   {item.items.map((option, index) => (
                     <p
                       key={index}
