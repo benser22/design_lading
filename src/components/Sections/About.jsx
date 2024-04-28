@@ -19,11 +19,11 @@ function About() {
   return (
     <section id="about">
       <Layout>
-        <div className="w-full flex flex-col mx-auto text-center mt-6 lg:mt-24">
+        <div className="w-full flex flex-col mx-auto text-center mt-6 lg:mt-16">
           <h1 className="text-blue-custom font-bold text-xl mini:text-2xl sm:text-3xl md:text-[48px]">
             {data["section-about"].title}
           </h1>
-          <div className="md:mt-20 xl:mt-30 pb-20 items-center text-left px-2 grid grid-cols-1 lg:grid-cols-2 mx-auto w-full">
+          <div className="md:mt-20 xl:mt-30 pb-12 sm:pb-20 items-center text-left px-2 grid grid-cols-1 lg:grid-cols-2 mx-auto w-full">
             {/* column 1 */}
             <div className="py-8 w-full px-4 lg:px-0 lg:w-1/2 mx-auto space-y-4">
               <p className="text-xl font-bold text-blue-custom">
@@ -53,11 +53,11 @@ function About() {
               </video>
               {videoPaused && (
                 <button
-                  className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 rounded-full w-20 h-20"
+                  className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 border-2 border-[rgba(256,256,256,0.5)] rounded-full w-20 h-20"
                   style={{ margin: "auto" }}
                   onClick={handleVideoToggle}
                 >
-                  <FaPlay className="text-6xl p-4 pl-5 opacity-90" />
+                  <FaPlay className="text-6xl p-2 pl-4 opacity-90" />
                 </button>
               )}
             </div>

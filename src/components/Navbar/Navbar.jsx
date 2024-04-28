@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useNav from "../../hooks/useNav";
 import MenuMobile from "./MenuMobile";
 import data from "../../data.json";
@@ -8,6 +8,20 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const { isOpen, handleIsOpen } = useNav();
   const [isOpenDrop, setIsOpenDrop] = useState({});
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleDropdownToggle = (itemId) => {
     const newIsOpenDrop = {};
@@ -21,8 +35,13 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed z-[98] top-0 left-0 w-full px-8 xl:px-16 py-2 flex justify-between items-center h-[78px] text-blue-custom bg-transparent`}
-      style={{ backdropFilter: "blur(2px)" }}
+      className={`fixed z-[98] top-0 left-0 w-full px-8 xl:px-16 py-2 flex justify-between items-center h-[78px] text-blue-custom ${
+        isScrolled ? "bg-[rgba(256,256,256,0.4)] backdrop-filter" : ""
+      }`}
+      style={{
+        backdropFilter: isScrolled ? "blur(10px)" : "none",
+        backgroundColor: isScrolled ? "" : "transparent",
+      }}
     >
       <div className="flex items-end justify-between w-full">
         <div className="flex items-end gap-1.5 mr-2">
@@ -90,6 +109,7 @@ const Navbar = () => {
                     <p
                       key={index}
                       className="truncate text-xs sm:text-[12px] xl:text-[14px] p-2 cursor-pointer hover:bg-opacity-70 hover:bg-slate-300 active:text-red-custom transition duration-300"
+                      onClick={() => handleDropdownToggle(item.id)}
                     >
                       {option.text}
                     </p>
