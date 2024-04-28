@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import SliderComponent from "./components/Sections/SliderComponent";
 import About from "./components/Sections/About";
 import Future from "./components/Sections/Future";
+import Say from "./components/Sections/Say";
 import Products from "./components/Sections/Products";
 import Explore from "./components/Sections/Explore";
 import Overview from "./components/Sections/Overview";
@@ -19,6 +20,7 @@ function App() {
       <SliderComponent />
       <About />
       <Future />
+      <Say />
       {/* 
         <Explore />
         <Overview />

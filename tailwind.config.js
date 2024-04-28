@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {},
       screens: {
+        xxs: "280px",
         mini: "320px",
         break_custom: "390px",
       },
