@@ -10,10 +10,13 @@ const Navbar = () => {
   const [isOpenDrop, setIsOpenDrop] = useState({});
 
   const handleDropdownToggle = (itemId) => {
-    setIsOpenDrop((prevState) => ({
-      ...prevState,
-      [itemId]: !prevState[itemId],
-    }));
+    const newIsOpenDrop = {};
+    Object.keys(isOpenDrop).forEach((key) => {
+      newIsOpenDrop[key] = false;
+    });
+
+    newIsOpenDrop[itemId] = !isOpenDrop[itemId];
+    setIsOpenDrop(newIsOpenDrop);
   };
 
   return (
@@ -82,11 +85,11 @@ const Navbar = () => {
                 </div>
               )}
               {item.isDropdown && isOpenDrop[item.id] && (
-                <div className="absolute p-2 top-full mt-1 space-y-5 bg-white rounded-md bg-opacity-[98%] left-0 z-[100] w-full min-w-max shadow-md">
+                <div className="absolute top-full mt-1 bg-white rounded-sm bg-opacity-[98%] left-0 z-[100] w-full min-w-max shadow-md">
                   {item.items.map((option, index) => (
                     <p
                       key={index}
-                      className="truncate text-xs sm:text-[12px] xl:text-[14px] 2xl:text-[14px] cursor-pointer hover:text-red-custom"
+                      className="truncate text-xs sm:text-[12px] xl:text-[14px] p-2 cursor-pointer hover:bg-opacity-70 hover:bg-slate-300 active:text-red-custom transition duration-300"
                     >
                       {option.text}
                     </p>

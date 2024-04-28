@@ -12,6 +12,7 @@ export default {
       fontFamily: {},
       screens: {
         mini: "320px",
+        break_custom: "390px",
       },
     },
   },
