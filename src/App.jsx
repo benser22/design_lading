@@ -1,10 +1,10 @@
-import Layout from "../src/components/ui/Layout";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import SliderComponent from "./components/Sections/SliderComponent";
 import About from "./components/Sections/About";
 import Future from "./components/Sections/Future";
 import Say from "./components/Sections/Say";
+import Testimonials from "./components/Sections/Testimonials";
 import Products from "./components/Sections/Products";
 import Explore from "./components/Sections/Explore";
 import Overview from "./components/Sections/Overview";
@@ -21,6 +21,7 @@ function App() {
       <About />
       <Future />
       <Say />
+      <Testimonials />
       {/* 
         <Explore />
         <Overview />

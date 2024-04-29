@@ -14,6 +14,7 @@ export default {
         xxs: "280px",
         mini: "320px",
         break_custom: "390px",
+        break_custom2: "542px",
       },
     },
   },

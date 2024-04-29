@@ -47,8 +47,8 @@ function Say() {
                 </div>
                 <span>{data["section-say"].option}</span>
                 <div className="flex items-center gap-1 mini:bg-light-blue-custom rounded-full px-0 py-0 mini:px-2 sm:px-4 mini:py-1 2xl:py-2">
-                  <MdContactMail className="hidden mini:block" />
-                  <button className="text-white active:text-slate-100 p-1 hover:opacity-80">
+                  <MdContactMail className="hidden mini:block text-lg md:text-xl" />
+                  <button className="text-white active:opacity-100 p-1 hover:opacity-80">
                     {isDesktopOrLaptop
                       ? data["section-say"].button2
                       : "signup email"}

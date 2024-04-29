@@ -31,6 +31,16 @@ body {
   display: none !important;
 }
 
+.arrow-left {
+  cursor: pointer;
+  width: 96px;
+}
+
+.arrow-right {
+  cursor: pointer;
+  width: 96px;
+}
+
 button:hover {
   filter: brightness(1.1);
   transition: filter 0.3ms;
