@@ -49,7 +49,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-screen flex items-center flex-wrap-reverse justify-around gap-6 sm:gap-12 px-1">
-          <div className="flex justify-between items-end gap-5">
+          <div className="flex justify-between items-end gap-5 overflow-visible">
             <Link
               to={"home"}
               spy={false}
@@ -61,19 +61,19 @@ function Footer() {
               <img
                 src={data["section-footer"]["logo-white"].url}
                 alt={data["section-footer"]["logo-white"].alt}
-                className="h-4 w-auto sm:w-20 lg:w-32 lg:h-auto hover:invert-[0.1]"
+                className="h-4 mini:w-auto sm:w-20 lg:w-32 lg:h-auto hover:invert-[0.1]"
               />
             </Link>
-            <p className="text-[10px] truncate">
+            <p className="hidden mini:block text-[10px] truncate">
               {data["section-footer"].copywrite}
             </p>
             <a href={data["section-footer"].privacy.url}>
-              <p className="text-[10px] truncate hover:text-light-blue-custom">
+              <p className="text-[8px] xxs:text-[10px] truncate hover:text-light-blue-custom">
                 {data["section-footer"].privacy.text}
               </p>
             </a>
             <a href={data["section-footer"].terms.url}>
-              <p className="text-[10px] truncate hover:text-light-blue-custom">
+              <p className="text-[8px] xxs:text-[10px] truncate hover:text-light-blue-custom">
                 {data["section-footer"].terms.text}
               </p>
             </a>

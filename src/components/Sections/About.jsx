@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer"; // Importa useInView
 import data from "../../data.json";
 import Layout from "../ui/Layout";
 import { FaPlay } from "react-icons/fa";
 
 function About() {
   const [videoPaused, setVideoPaused] = useState(true);
+  const [videoIntersectionRef, videoIntersection] = useInView({
+    threshold: 0.5, // Cuando el 50% del video esté visible
+  });
+  const videoRef = useRef(null);
 
   const handleVideoToggle = () => {
-    const video = document.querySelector("video");
+    const video = videoRef.current;
     setVideoPaused(!videoPaused);
     if (videoPaused) {
       video.play();
@@ -15,6 +20,18 @@ function About() {
       video.pause();
     }
   };
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (videoIntersection && video.paused) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {}).catch((error) => {});
+      }
+    } else if (!videoIntersection && !video.paused) {
+      video.pause();
+    }
+  }, [videoIntersection]);
 
   return (
     <Layout>
@@ -40,6 +57,11 @@ function About() {
             {/* column 2 */}
             <div className="relative lg:mr-20">
               <video
+                ref={(node) => {
+                  // Asigna el ref del video a ambas referencias
+                  videoIntersectionRef(node);
+                  videoRef.current = node;
+                }}
                 className="h-full w-full rounded-lg"
                 controls
                 onPlay={() => setVideoPaused(false)}

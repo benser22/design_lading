@@ -16,7 +16,7 @@ const MenuMobile = ({ isOpen, onClick }) => {
     <div
       className={`${
         isOpen ? "flex fadeIn" : "hidden"
-      } w-full h-screen fixed inset-0 md:hidden`}
+      } w-full min-h-screen fixed inset-0 md:hidden scroll-auto`}
       onClick={onClick}
       style={{ background: "rgba(0,0,0,0.3)" }}
     >
