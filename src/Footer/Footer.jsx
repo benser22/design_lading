@@ -52,6 +52,7 @@ function Footer() {
                 width={24}
                 src={data["section-footer"]["social-media"].facebook.url}
                 alt={data["section-footer"]["social-media"].facebook.alt}
+                className="hover:invert-[0.1]"
               />
             </a>
             <a
@@ -63,6 +64,7 @@ function Footer() {
                 width={24}
                 src={data["section-footer"]["social-media"].linkedin.url}
                 alt={data["section-footer"]["social-media"].linkedin.alt}
+                className="hover:invert-[0.1]"
               />
             </a>
             <a
@@ -74,6 +76,7 @@ function Footer() {
                 width={24}
                 src={data["section-footer"]["social-media"].twitter.url}
                 alt={data["section-footer"]["social-media"].twitter.alt}
+                className="hover:invert-[0.1]"
               />
             </a>
           </div>
