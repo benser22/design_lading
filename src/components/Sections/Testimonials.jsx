@@ -90,9 +90,12 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <div className="flex">
-                    <span className="text-gray-custom text-3xl mr-2">"</span>
+                    <span className="text-gray-custom text-5xl mr-2 font-catamaran">
+                      "
+                    </span>
                     <p className="text-gray-custom text-sm">
-                      {testimonial.paragraph}"
+                      {testimonial.paragraph}
+                      <span className="font-catamaran ml-1">"</span>
                     </p>
                   </div>
                 </div>

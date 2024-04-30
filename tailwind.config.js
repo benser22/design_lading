@@ -9,7 +9,9 @@ export default {
         "light-blue-custom": "#47BEBA",
         "gray-custom": "#6C6C6C",
       },
-      fontFamily: {},
+      fontFamily: {
+        catamaran: ["Catamaran", "sans-serif"],
+      },
       screens: {
         xxs: "280px",
         mini: "320px",
