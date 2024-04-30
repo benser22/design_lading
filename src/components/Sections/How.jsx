@@ -55,7 +55,6 @@ const TimelineItem = ({
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -40 },
   };
 
   const itemTransition = {
@@ -68,7 +67,6 @@ const TimelineItem = ({
       ref={ref}
       initial="hidden"
       animate={visibleIndex >= index ? "visible" : "hidden"}
-      exit="exit"
       variants={itemVariants}
       transition={itemTransition}
       className="grid grid-cols-3 sm:gap-4 relative"
