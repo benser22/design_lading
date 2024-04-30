@@ -36,61 +36,12 @@ const MenuMobile = ({ isOpen, onClick }) => {
         </div>
         <div className="ml-[2vw] flex flex-col gap-12 mt-6 w-full">
           {data["section-header"].links.map((item, index) => (
-            <Link
-              to={item.href}
+            <RenderLink
               key={index}
-              className="flex flex-col gap-4 hover:text-red-custom active:text-red-custom cursor-pointer"
-              smooth={true}
-              duration={700}
-              spy={false}
-              offset={-80}
-            >
-              <div
-                className="flex flex-col gap-1.5 cursor-pointer"
-                onClick={() => handleDropdownToggle(item.id)}
-              >
-                <div className="flex items-center gap-2">
-                  {item.icon && (
-                    <img
-                      src={item.icon}
-                      alt={item.alt}
-                      className="w-[26px] h-[26px]"
-                    />
-                  )}
-                  <p
-                    className="min-w-max text-md hover:text-red-custom sm:text-[12px] lg:text-[16px] 2xl:text-[18px] w-max"
-                    key={item.id}
-                  >
-                    {item.title}
-                  </p>
-                  {item.isDropdown && (
-                    <img
-                      src={data["section-header"]["dropdow-icon"].url}
-                      alt={data["section-header"]["dropdow-icon"].alt}
-                      className="h-[6px] mr-2"
-                      style={{
-                        transform: isOpenDrop[item.id]
-                          ? "rotate(180deg)"
-                          : "rotate(0deg)",
-                        transition: "transform 0.2s ease-in-out",
-                      }}
-                    />
-                  )}
-                </div>
-              </div>
-              {item.isDropdown && isOpenDrop[item.id] && (
-                <div className="flex flex-col space-y-3 w-full min-w-max">
-                  {item.items.map((option, index) => (
-                    <p
-                      key={index}
-                      className="ml-8 truncate text-blue-custom cursor-pointer hover:text-red-custom"
-                    >
-                      {option.text}
-                    </p>
-                  ))}
-                </div>
-              )}
-            </Link>
+              link={item}
+              handleDropdownToggle={handleDropdownToggle}
+              isOpenDrop={isOpenDrop}
+            />
           ))}
           <a href="#" target="_blank">
             <div className="flex items-center gap-2">
@@ -125,5 +76,72 @@ const MenuMobile = ({ isOpen, onClick }) => {
     </div>
   );
 };
+
+function RenderLink({ link, handleDropdownToggle, isOpenDrop }) {
+  return (
+    <div>
+      <Link
+        to={link.href}
+        key={link.id}
+        className="flex flex-col gap-4 hover:text-red-custom active:text-red-custom cursor-pointer"
+        smooth={true}
+        duration={700}
+        spy={false}
+        offset={-80}
+      >
+        <div
+          className="flex flex-col gap-1.5 cursor-pointer"
+          onClick={() => handleDropdownToggle(link.id)}
+        >
+          <div className="flex items-center gap-2">
+            {link.icon && (
+              <img
+                src={link.icon}
+                alt={link.alt}
+                className="w-[26px] h-[26px]"
+              />
+            )}
+            <p
+              className="min-w-max text-md hover:text-red-custom sm:text-[12px] lg:text-[16px] 2xl:text-[18px] w-max"
+              key={link.id}
+            >
+              {link.title}
+            </p>
+            {link.isDropdown && (
+              <img
+                src={data["section-header"]["dropdow-icon"].url}
+                alt={data["section-header"]["dropdow-icon"].alt}
+                className="h-[6px] mr-2"
+                style={{
+                  transform: isOpenDrop[link.id]
+                    ? "rotate(180deg)"
+                    : "rotate(0deg)",
+                  transition: "transform 0.2s ease-in-out",
+                }}
+              />
+            )}
+          </div>
+        </div>
+      </Link>
+      {link.isDropdown && isOpenDrop[link.id] && (
+        <div className="flex flex-col space-y-3 w-full min-w-max mt-4">
+          {link.items.map((option) => (
+            <Link
+              key={option.id + option.text}
+              to={option.link}
+              className="ml-8 truncate text-blue-custom cursor-pointer hover:text-red-custom"
+              smooth={true}
+              duration={700}
+              spy={false}
+              offset={-80}
+            >
+              {option.text}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default MenuMobile;

@@ -18,9 +18,14 @@
         "href": "cases",
         "isDropdown": true,
         "items": [
-          { "id": 1, "text": "about", "link": "about" },
-          { "id": 2, "text": "future", "link": "future" },
-          { "id": 3, "text": "testimonials", "link": "testimonials" }
+          { "id": 1, "text": "about", "link": "about", "external": false },
+          { "id": 2, "text": "future", "link": "future", "external": false },
+          {
+            "id": 3,
+            "text": "testimonials",
+            "link": "testimonials",
+            "external": false
+          }
         ],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255278/ia_landing/mobile%20icons/flrxfwem7muuxdrjukjo.png",
         "alt": "user-cases icon"
@@ -31,9 +36,9 @@
         "href": "resources",
         "isDropdown": true,
         "items": [
-          { "id": 1, "text": "how", "link": "how" },
-          { "id": 2, "text": "start now", "link": "last" },
-          { "id": 3, "text": "resource 2", "link": "" }
+          { "id": 1, "text": "how", "link": "how", "external": false },
+          { "id": 2, "text": "start now", "link": "last", "external": false },
+          { "id": 3, "text": "resource 2", "link": "", "external": false }
         ],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/cy2zvnuwnvw4tzpjuhny.png",
         "alt": "icon resources"
@@ -42,6 +47,7 @@
         "id": 3,
         "title": "weekly demos",
         "href": "demos",
+        "external": false,
         "isDropdown": false,
         "items": ["", "", ""],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/ledbltcxpajnrui7qaci.png",
@@ -52,6 +58,7 @@
         "title": "pricing",
         "href": "last",
         "isDropdown": false,
+        "external": false,
         "items": ["", "", ""],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/npdt3odrgjp3bfbr9bpg.png",
         "alt": "icon pricing"
@@ -283,126 +290,151 @@
   "section-footer": {
     "product": {
       "title": "Product",
+      "href": "#",
       "links": [
         {
           "id": 1,
           "text": "Login",
-          "url": "#"
+          "url": "/",
+          "external": true
         },
         {
           "id": 2,
           "text": "Pricing",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 3,
           "text": "Copy ai Reviews",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 4,
           "text": "Alternatives",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 5,
           "text": "25+ Languages",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 6,
           "text": "Free Ai Tools",
-          "url": "#"
+          "url": "say",
+          "external": false
         }
       ]
     },
     "company": {
       "title": "Company",
+      "href": "#",
       "links": [
         {
           "id": 1,
           "text": "Blog",
-          "url": "https://www.blogger.com/about/?hl=es"
+          "url": "https://www.blogger.com/about/?hl=es",
+          "external": true
         },
         {
           "id": 2,
           "text": "Careers",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 3,
           "text": "Community",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 4,
           "text": "Twitter",
-          "url": "https://twitter.com/"
+          "url": "https://twitter.com/",
+          "external": true
         },
         {
           "id": 5,
           "text": "Linkedin",
-          "url": "https://linkedin.com/"
+          "url": "https://linkedin.com/",
+          "external": true
         },
         {
           "id": 6,
           "text": "Affiliate Program",
-          "url": "#"
+          "url": "#",
+          "external": false
         }
       ]
     },
     "support": {
       "title": "Support",
+      "href": "#",
       "links": [
         {
           "id": 1,
           "text": "Weekly Deos",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 2,
           "text": "Contact Us",
-          "url": "mailto:example@example.com"
+          "url": "mailto:example@example.com",
+          "external": true
         },
         {
           "id": 3,
           "text": "Report a Bug",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 4,
           "text": "Report an Outage",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 5,
           "text": "Request a New Feature",
-          "url": "#"
+          "url": "#",
+          "external": false
         }
       ]
     },
     "user-cases": {
       "title": "User Cases",
+      "href": "#",
       "links": [
         {
           "id": 1,
           "text": "For Blog Writers",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 2,
           "text": "For Social Media",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 3,
           "text": "Managers",
-          "url": "#"
+          "url": "#",
+          "external": false
         },
         {
           "id": 4,
           "text": "Report",
-          "url": "#"
+          "url": "#",
+          "external": false
         }
       ]
     },
@@ -419,10 +451,10 @@
         "alt": "facebook icon",
         "link": "https://www.facebook.com/pages/create/"
       },
-      "linkedin": {
+      "instagram": {
         "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714215273/ia_landing/icons/instagram.png",
         "alt": "linkedin icon",
-        "link": "https://www.linkedin.com/signup"
+        "link": "https://www.instagram.com/"
       },
       "twitter": {
         "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714215273/ia_landing/icons/twitter.png",
