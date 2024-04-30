@@ -270,6 +270,10 @@
     "title": "Ready to level-up?",
     "subtitle": "Id ipsum amet nibh dolor mi ac diam pellentesque.",
     "button": "Get Started - It’s Free",
+    "checks-icon": {
+      "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714212358/ia_landing/icons/check.png",
+      "alt": "check icon"
+    },
     "checks": [
       "No Credit Card Required",
       "30 credits on sign up",

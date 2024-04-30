@@ -6,6 +6,7 @@ import Future from "./components/Sections/Future";
 import Say from "./components/Sections/Say";
 import Testimonials from "./components/Sections/Testimonials";
 import How from "./components/Sections/How";
+import Last from "./components/Sections/Last";
 import Products from "./components/Sections/Products";
 import Explore from "./components/Sections/Explore";
 import Overview from "./components/Sections/Overview";
@@ -24,6 +25,7 @@ function App() {
       <Say />
       <Testimonials />
       <How />
+      <Last />
       {/* 
         <Explore />
         <Overview />
