@@ -1,55 +1,81 @@
 import React from "react";
 import data from "../data.json";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
-    <footer className="flex w-full py-4 bg-black overflow-hidden">
-      <div className="flex flex-col items-center justify-center text-white mx-auto">
-        <div className="w-screen flex items-center justify-around gap-12 p-4">
-          <a href="/">
-            <div className="flex items-center gap-2">
+    <footer className="flex w-full pt-20 pb-10 bg-blue-custom overflow-hidden">
+      <div className="flex flex-col justify-center text-white mx-auto">
+        <div className="grid sm:grid-cols-4 mb-12 w-full text-center gap-4">
+          <div>COLUMNA 1</div>
+          <div>COLUMNA 2</div>
+          <div>COLUMNA 3</div>
+          <div>COLUMNA 4</div>
+        </div>
+        <div className="w-screen flex items-center flex-wrap-reverse justify-around gap-6 sm:gap-12 px-1">
+          <div className="flex justify-between items-end gap-5">
+            <Link
+              to={"home"}
+              spy={false}
+              smooth={true}
+              duration={500}
+              offset={-85}
+              className="cursor-pointer"
+            >
               <img
-                src={data.logo.url}
-                alt={data.logo.alt}
-                className="w-12 sm:w-20"
+                src={data["section-footer"]["logo-white"].url}
+                alt={data["section-footer"]["logo-white"].alt}
+                className="h-4 w-auto sm:w-20 lg:w-32 lg:h-auto hover:invert-[0.1]"
               />
-              <p className="font-bold md:text-2xl hover:text-green-custom">
-                {data["section-footer"].trademark}
+            </Link>
+            <p className="text-[10px] truncate">
+              {data["section-footer"].copywrite}
+            </p>
+            <a href={data["section-footer"].privacy.url}>
+              <p className="text-[10px] truncate hover:text-light-blue-custom">
+                {data["section-footer"].privacy.text}
               </p>
-            </div>
-          </a>
-          <p className="hidden md:flex italic text-xl md:text-2xl tracking-widest">
-            "{data["section-footer"].slogan}"
-          </p>
-          <div className="flex items-center text-white">
-            <a href={data.blog.url} Target="_blank" className="ml-auto">
-              <div
-                title={data.blog.text}
-                className="text-center hover:text-green-custom text-white cursor-pointer flex items-center gap-2 justify-center w-full"
-              >
-                <img
-                  src={data.blog.icon}
-                  alt={`${data.blog.title} icon`}
-                  style={{ filter: "invert(1)" }}
-                  className="w-8 sm:w-12 "
-                />
-                <div className="flex flex-col text-left justify-center">
-                  <p className="text-md md:text-lg font-bold">
-                    {data.blog.title}
-                  </p>
-                  <h6 className="hidden sm:flex text-[12px] -mt-1 text-gray_default">
-                    {data.blog.text}
-                  </h6>
-                </div>
-              </div>
+            </a>
+            <a href={data["section-footer"].terms.url}>
+              <p className="text-[10px] truncate hover:text-light-blue-custom">
+                {data["section-footer"].terms.text}
+              </p>
             </a>
           </div>
-        </div>
-        <div className="flex w-full items-center justify-around px-4 gap-6 text-xs">
-          <p className="">{data["section-footer"].copy}</p>
-          <div className="flex items-center gap-1">
-            <p className="">{data["section-footer"].design}</p>
-            <p className="font-semibold">{data["section-footer"].designer}</p>
+          <div className="flex items-center gap-4">
+            <a
+              href={data["section-footer"]["social-media"].facebook.link}
+              target="_blank"
+            >
+              <img
+                title={`ir a ${data["section-footer"]["social-media"].facebook.link}`}
+                width={24}
+                src={data["section-footer"]["social-media"].facebook.url}
+                alt={data["section-footer"]["social-media"].facebook.alt}
+              />
+            </a>
+            <a
+              href={data["section-footer"]["social-media"].linkedin.link}
+              target="_blank"
+            >
+              <img
+                title={`ir a ${data["section-footer"]["social-media"].linkedin.link}`}
+                width={24}
+                src={data["section-footer"]["social-media"].linkedin.url}
+                alt={data["section-footer"]["social-media"].linkedin.alt}
+              />
+            </a>
+            <a
+              href={data["section-footer"]["social-media"].twitter.link}
+              target="_blank"
+            >
+              <img
+                title={`ir a ${data["section-footer"]["social-media"].twitter.link}`}
+                width={24}
+                src={data["section-footer"]["social-media"].twitter.url}
+                alt={data["section-footer"]["social-media"].twitter.alt}
+              />
+            </a>
           </div>
         </div>
       </div>

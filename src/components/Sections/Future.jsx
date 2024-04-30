@@ -3,8 +3,8 @@ import Layout from "../ui/Layout";
 
 function Future() {
   return (
-    <section id="future">
-      <Layout>
+    <Layout>
+      <section id="future">
         <div className="w-full flex flex-col mx-auto px-6 sm:px-10 text-center mt-4 lg:mt-16">
           <h1 className="text-blue-custom font-bold text-xl pb-4 lg:pb-8 mini:text-2xl sm:text-3xl md:text-[48px]">
             {data["section-features"].title}{" "}
@@ -30,8 +30,8 @@ function Future() {
             ))}
           </div>
         </div>
-      </Layout>
-    </section>
+      </section>
+    </Layout>
   );
 }
 export default Future;

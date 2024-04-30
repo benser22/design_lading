@@ -18,9 +18,9 @@
         "href": "cases",
         "isDropdown": true,
         "items": [
-          { "id": 1, "text": "case 1", "link": "" },
-          { "id": 2, "text": "case 2", "link": "" },
-          { "id": 3, "text": "case 3", "link": "" }
+          { "id": 1, "text": "about", "link": "about" },
+          { "id": 2, "text": "future", "link": "future" },
+          { "id": 3, "text": "testimonials", "link": "testimonials" }
         ],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255278/ia_landing/mobile%20icons/flrxfwem7muuxdrjukjo.png",
         "alt": "user-cases icon"
@@ -31,9 +31,9 @@
         "href": "resources",
         "isDropdown": true,
         "items": [
-          { "id": 1, "text": "resource 1", "link": "" },
-          { "id": 2, "text": "resource 2", "link": "" },
-          { "id": 3, "text": "resource 3", "link": "" }
+          { "id": 1, "text": "how", "link": "how" },
+          { "id": 2, "text": "start now", "link": "last" },
+          { "id": 3, "text": "resource 2", "link": "" }
         ],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/cy2zvnuwnvw4tzpjuhny.png",
         "alt": "icon resources"
@@ -50,7 +50,7 @@
       {
         "id": 4,
         "title": "pricing",
-        "href": "pricing",
+        "href": "last",
         "isDropdown": false,
         "items": ["", "", ""],
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/npdt3odrgjp3bfbr9bpg.png",
@@ -411,8 +411,8 @@
       "alt": "logo image"
     },
     "copywrite": "© 2022 copy ai, Inc",
-    "privacy": "Privacy Notice",
-    "terms": "Terms of service",
+    "privacy": { "text": "Privacy Notice", "url": "" },
+    "terms": { "text": "Terms of service", "url": "" },
     "social-media": {
       "facebook": {
         "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714215273/ia_landing/icons/facebook.png",

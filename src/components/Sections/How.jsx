@@ -63,71 +63,73 @@ const TimelineItem = ({
   };
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={visibleIndex >= index ? "visible" : "hidden"}
-      variants={itemVariants}
-      transition={itemTransition}
-      className="grid grid-cols-3 sm:gap-4 relative"
-    >
-      <div className="col-span-1">
-        <img
-          src={stage.url}
-          alt={stage.alt}
-          className="w-screen h-auto rounded-lg ml-[8vw] sm:ml-[12vw] 2xl:ml-0"
-          style={{
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",
-          }}
-        />
-      </div>
-      <div className="col-span-1 flex items-start justify-center">
-        <div className="border border-black bg-white text-blue-custom w-6 h-6 flex items-center justify-center text-lg">
-          <p className="text-xs font-bold">{index + 1}</p>
-        </div>
-        {index !== Object.keys(timelineData).length && (
-          <div
-            className="absolute inset-y-0 left-1/2 w-0.5 mt-8"
+    <section id="how">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={visibleIndex >= index ? "visible" : "hidden"}
+        variants={itemVariants}
+        transition={itemTransition}
+        className="grid grid-cols-3 sm:gap-4 relative"
+      >
+        <div className="col-span-1">
+          <img
+            src={stage.url}
+            alt={stage.alt}
+            className="w-screen h-auto rounded-lg ml-[8vw] sm:ml-[12vw] 2xl:ml-0"
             style={{
-              transform: "translateX(-50%)",
-              borderLeft: "1px dotted #B4B4B4",
-              zIndex: -1,
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",
             }}
-          ></div>
-        )}
-      </div>
-      <div className="col-span-1 flex flex-col items-start justify-start -ml-[8vw] sm:-ml-[12vw] 2xl:ml-0 lg:pr-20 text-xs">
-        <div className="">
-          <h3 className="sm:text-lg font-bold text-blue-custom">
-            {stage.title}
-          </h3>
+          />
         </div>
-        <p
-          className="text-blue-custom text-[10px] md:text-[12px] lg:text-[16px]"
-          style={{ lineHeight: "normal" }}
-        >
-          {stage.subtitle}
-        </p>
-        {stage.checks.map((check, i) => (
-          <div
-            className="flex items-center gap-2 mt-1 sm:mt-2 md:mt-4 sm:ml-4"
-            key={i}
-          >
-            <img
-              width={16}
-              src={data["section-how"]["checks-icon"].url}
-              alt={data["section-how"]["checks-icon"].alt}
-            ></img>
-            <p
-              className="text-blue-custom text-[8px] sm:text-md md:text-[14px]"
-              style={{ lineHeight: "normal" }}
-            >
-              {check}
-            </p>
+        <div className="col-span-1 flex items-start justify-center">
+          <div className="border border-black bg-white text-blue-custom w-6 h-6 flex items-center justify-center text-lg">
+            <p className="text-xs font-bold">{index + 1}</p>
           </div>
-        ))}
-      </div>
-    </motion.div>
+          {index !== Object.keys(timelineData).length && (
+            <div
+              className="absolute inset-y-0 left-1/2 w-0.5 mt-8"
+              style={{
+                transform: "translateX(-50%)",
+                borderLeft: "1px dotted #B4B4B4",
+                zIndex: -1,
+              }}
+            ></div>
+          )}
+        </div>
+        <div className="col-span-1 flex flex-col items-start justify-start -ml-[8vw] sm:-ml-[12vw] 2xl:ml-0 lg:pr-20 text-xs">
+          <div className="">
+            <h3 className="sm:text-lg font-bold text-blue-custom">
+              {stage.title}
+            </h3>
+          </div>
+          <p
+            className="text-blue-custom text-[10px] md:text-[12px] lg:text-[16px]"
+            style={{ lineHeight: "normal" }}
+          >
+            {stage.subtitle}
+          </p>
+          {stage.checks.map((check, i) => (
+            <div
+              className="flex items-center gap-2 mt-1 sm:mt-2 md:mt-4 sm:ml-4"
+              key={i}
+            >
+              <img
+                width={16}
+                src={data["section-how"]["checks-icon"].url}
+                alt={data["section-how"]["checks-icon"].alt}
+              ></img>
+              <p
+                className="text-blue-custom text-[8px] sm:text-md md:text-[14px]"
+                style={{ lineHeight: "normal" }}
+              >
+                {check}
+              </p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 };
 

@@ -17,9 +17,9 @@ function About() {
   };
 
   return (
-    <section id="about">
-      <Layout>
-        <div className="w-full flex flex-col mx-auto text-center mt-6 lg:mt-16">
+    <Layout>
+      <div className="w-full flex flex-col mx-auto text-center mt-6 lg:mt-16">
+        <section id="about">
           <h1 className="text-blue-custom font-bold text-xl mini:text-2xl sm:text-3xl md:text-[48px]">
             {data["section-about"].title}
           </h1>
@@ -62,9 +62,9 @@ function About() {
               )}
             </div>
           </div>
-        </div>
-      </Layout>
-    </section>
+        </section>
+      </div>
+    </Layout>
   );
 }
 

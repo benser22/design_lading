@@ -26,12 +26,13 @@ function App() {
       <Testimonials />
       <How />
       <Last />
+      <Footer />
       {/* 
         <Explore />
         <Overview />
         <Project />
         <LastSection />
-      <Footer /> */}
+      */}
     </main>
   );
 }

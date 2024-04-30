@@ -106,13 +106,23 @@ const Navbar = () => {
               {item.isDropdown && isOpenDrop[item.id] && (
                 <div className="absolute top-full mt-1 bg-white rounded-sm bg-opacity-[98%] left-0 z-[100] w-full min-w-max shadow-md">
                   {item.items.map((option, index) => (
-                    <p
-                      key={index}
-                      className="truncate text-xs sm:text-[12px] xl:text-[14px] p-2 cursor-pointer hover:bg-opacity-70 hover:bg-slate-300 active:text-red-custom transition duration-300"
-                      onClick={() => handleDropdownToggle(item.id)}
+                    <Link
+                      key={index + option.text}
+                      to={option.link}
+                      spy={false}
+                      smooth={true}
+                      duration={500}
+                      offset={-85}
+                      className="cursor-pointer"
                     >
-                      {option.text}
-                    </p>
+                      <p
+                        key={option.text + index}
+                        className="truncate text-xs sm:text-[12px] xl:text-[14px] p-2 cursor-pointer hover:bg-opacity-70 hover:bg-slate-300 active:text-red-custom transition duration-300"
+                        onClick={() => handleDropdownToggle(item.id)}
+                      >
+                        {option.text}
+                      </p>
+                    </Link>
                   ))}
                 </div>
               )}
