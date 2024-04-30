@@ -21,9 +21,11 @@ function Future() {
                       {item.title}
                     </h3>
                     <h3 className="">{item.subtitle}</h3>
-                    <h3 className="min-w-max text-[14px] cursor-pointer active:text-red-custom hover:text-blue-custom text-light-blue-custom">
-                      {item.action}
-                    </h3>
+                    <a href={item["action-link"]} target="_blank">
+                      <h3 className="min-w-max text-[14px] cursor-pointer active:text-red-custom hover:text-blue-custom text-light-blue-custom">
+                        {item.action}
+                      </h3>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -120,6 +120,7 @@
         "title": "Blog Content",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
+        "action-link": "https://www.blogger.com/about/?hl=es",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/blog.png",
         "alt": "Blog content icon"
       },
@@ -128,6 +129,7 @@
         "title": "Article",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
+        "action-link": "https://www.blogger.com/about/?hl=es",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/article.png",
         "alt": "Article icon"
       },
@@ -136,6 +138,7 @@
         "title": "Content Writing",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
+        "action-link": "https://www.blogger.com/about/?hl=es",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/content%20writing.png",
         "alt": "Writing icon"
       },
@@ -144,6 +147,7 @@
         "title": "Seo",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
+        "action-link": "https://www.blogger.com/about/?hl=es",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/seo.png",
         "alt": "Seo icon"
       },
@@ -152,6 +156,7 @@
         "title": "Design",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
+        "action-link": "https://www.blogger.com/about/?hl=es",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/design.png",
         "alt": "Design icon"
       },
@@ -160,6 +165,7 @@
         "title": "Coding",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
+        "action-link": "https://www.blogger.com/about/?hl=es",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/coding.png",
         "alt": "Coding icon"
       }
