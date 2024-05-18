@@ -1,3 +1,3 @@
 # IA DESIGN
 
-Silika Artificial Intelligence Landing Page Design
+Orion Tech Artificial Intelligence Landing Page Design

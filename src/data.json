@@ -74,7 +74,7 @@
       "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/f_auto,q_auto/v1/ia_landing/hero/bg",
       "alt": "hero bg"
     },
-    "title": "Silika Helps",
+    "title": "Orion Tech Helps",
     "title2": "Marketing Agencies!",
     "subtitle": "At nulla tristique facilisis augue. Lectus diam dignissim erat blandit pellentesque egestas nulla a. Nulla consectetur nunc egestas metus pellentesque.",
     "button1": "Get Started",
@@ -120,7 +120,7 @@
         "title": "Blog Content",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
-        "action-link": "https://www.blogger.com/about/?hl=es",
+        "action-link": "https://blog.oriontechdigital.com",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/blog.png",
         "alt": "Blog content icon"
       },
@@ -129,7 +129,7 @@
         "title": "Article",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
-        "action-link": "https://www.blogger.com/about/?hl=es",
+        "action-link": "https://blog.oriontechdigital.com",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/article.png",
         "alt": "Article icon"
       },
@@ -138,7 +138,7 @@
         "title": "Content Writing",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
-        "action-link": "https://www.blogger.com/about/?hl=es",
+        "action-link": "https://blog.oriontechdigital.com",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/content%20writing.png",
         "alt": "Writing icon"
       },
@@ -147,7 +147,7 @@
         "title": "Seo",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
-        "action-link": "https://www.blogger.com/about/?hl=es",
+        "action-link": "https://blog.oriontechdigital.com",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/seo.png",
         "alt": "Seo icon"
       },
@@ -156,7 +156,7 @@
         "title": "Design",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
-        "action-link": "https://www.blogger.com/about/?hl=es",
+        "action-link": "https://blog.oriontechdigital.com",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202095/ia_landing/icons/design.png",
         "alt": "Design icon"
       },
@@ -165,7 +165,7 @@
         "title": "Coding",
         "subtitle": "Write optimized blog posts in a fraction of the time",
         "action": "Try Blog Content ->",
-        "action-link": "https://www.blogger.com/about/?hl=es",
+        "action-link": "https://blog.oriontechdigital.com",
         "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714202094/ia_landing/icons/coding.png",
         "alt": "Coding icon"
       }
@@ -343,7 +343,7 @@
         {
           "id": 1,
           "text": "Blog",
-          "url": "https://www.blogger.com/about/?hl=es",
+          "url": "https://blog.oriontechdigital.com",
           "external": true
         },
         {
