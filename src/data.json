@@ -13,6 +13,15 @@
     },
     "links": [
       {
+        "id": 0,
+        "title": "home",
+        "href": "home",
+        "isDropdown": false,
+        "items": [],
+        "icon": "home.png",
+        "alt": "icon resources"
+      },
+      {
         "id": 1,
         "title": "user cases",
         "href": "cases",
@@ -27,47 +36,35 @@
             "external": false
           }
         ],
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255278/ia_landing/mobile%20icons/flrxfwem7muuxdrjukjo.png",
+        "icon": "user-cases.png",
         "alt": "user-cases icon"
       },
       {
-        "id": 2,
-        "title": "resources",
-        "href": "resources",
-        "isDropdown": true,
-        "items": [
-          { "id": 1, "text": "how", "link": "how", "external": false },
-          { "id": 2, "text": "start now", "link": "last", "external": false },
-          { "id": 3, "text": "resource 2", "link": "", "external": false }
-        ],
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/cy2zvnuwnvw4tzpjuhny.png",
-        "alt": "icon resources"
-      },
-      {
         "id": 3,
-        "title": "weekly demos",
-        "href": "demos",
-        "external": false,
-        "isDropdown": false,
-        "items": ["", "", ""],
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/ledbltcxpajnrui7qaci.png",
-        "alt": "icon demos"
-      },
-      {
-        "id": 4,
         "title": "pricing",
         "href": "last",
         "isDropdown": false,
         "external": false,
         "items": ["", "", ""],
-        "icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714254371/ia_landing/mobile%20icons/npdt3odrgjp3bfbr9bpg.png",
+        "icon": "prices.png",
         "alt": "icon pricing"
+      },
+      {
+        "id": 4,
+        "title": "project",
+        "href": "how",
+        "isDropdown": false,
+        "external": false,
+        "items": ["", "", ""],
+        "icon": "project.png",
+        "alt": "icon project"
       }
     ],
-    "login": "Login",
-    "login-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255278/ia_landing/mobile%20icons/wrrsytxf19dnx6ofzob8.png",
-    "login-button": "Get Started",
-    "login-button-icon": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714255277/ia_landing/mobile%20icons/af67ngppd7qdg6su1hjk.png"
+    "blog": "blog",
+    "blog-icon": "blog.png",
+    "blog-ref": "https://blog.oriontechdigital.com/",
+    "contact-button": "Contact Us",
+    "contact-button-icon": "contact.png"
   },
   "section-hero": {
     "bg": {
@@ -223,7 +220,7 @@
     ]
   },
   "section-how": {
-    "title": "How it works",
+    "title": "Orion Tech Digital",
     "checks-icon": {
       "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714212358/ia_landing/icons/check.png",
       "alt": "check icon"
@@ -294,126 +291,44 @@
     ]
   },
   "section-footer": {
-    "product": {
-      "title": "Product",
-      "href": "#",
-      "links": [
-        {
-          "id": 1,
-          "text": "Login",
-          "url": "/",
-          "external": true
-        },
-        {
-          "id": 2,
-          "text": "Pricing",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 3,
-          "text": "Copy ai Reviews",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 4,
-          "text": "Alternatives",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 5,
-          "text": "25+ Languages",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 6,
-          "text": "Free Ai Tools",
-          "url": "say",
-          "external": false
-        }
-      ]
-    },
-    "company": {
-      "title": "Company",
-      "href": "#",
-      "links": [
-        {
-          "id": 1,
-          "text": "Blog",
-          "url": "https://blog.oriontechdigital.com",
-          "external": true
-        },
-        {
-          "id": 2,
-          "text": "Careers",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 3,
-          "text": "Community",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 4,
-          "text": "Twitter",
-          "url": "https://twitter.com/",
-          "external": true
-        },
-        {
-          "id": 5,
-          "text": "Linkedin",
-          "url": "https://linkedin.com/",
-          "external": true
-        },
-        {
-          "id": 6,
-          "text": "Affiliate Program",
-          "url": "#",
-          "external": false
-        }
-      ]
-    },
-    "support": {
-      "title": "Support",
-      "href": "#",
-      "links": [
-        {
-          "id": 1,
-          "text": "Weekly Deos",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 2,
-          "text": "Contact Us",
-          "url": "mailto:example@example.com",
-          "external": true
-        },
-        {
-          "id": 3,
-          "text": "Report a Bug",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 4,
-          "text": "Report an Outage",
-          "url": "#",
-          "external": false
-        },
-        {
-          "id": 5,
-          "text": "Request a New Feature",
-          "url": "#",
-          "external": false
-        }
-      ]
-    },
+    "links": [
+      {
+        "id": 0,
+        "title": "home",
+        "href": "home",
+        "isDropdown": false,
+        "items": [],
+        "icon": "home.png",
+        "alt": "icon resources"
+      },
+      {
+        "id": 1,
+        "title": "user cases",
+        "href": "about",
+        "icon": "user-cases.png",
+        "alt": "user-cases icon"
+      },
+      {
+        "id": 3,
+        "title": "pricing",
+        "href": "last",
+        "isDropdown": false,
+        "external": false,
+        "items": ["", "", ""],
+        "icon": "prices.png",
+        "alt": "icon pricing"
+      },
+      {
+        "id": 4,
+        "title": "project",
+        "href": "how",
+        "isDropdown": false,
+        "external": false,
+        "items": ["", "", ""],
+        "icon": "project.png",
+        "alt": "icon project"
+      }
+    ],
     "user-cases": {
       "title": "User Cases",
       "href": "#",
@@ -448,7 +363,7 @@
       "url": "https://res.cloudinary.com/djzp2k8gd/image/upload/v1714207440/ia_landing/logos/logo-w.png",
       "alt": "logo image"
     },
-    "copywrite": "© 2022 copy ai, Inc",
+    "copywrite": "© 2024 copy ai, Inc",
     "privacy": { "text": "Privacy Notice", "url": "" },
     "terms": { "text": "Terms of service", "url": "" },
     "social-media": {
@@ -468,5 +383,11 @@
         "link": "https://twitter.com/userrandom"
       }
     }
-  }
+  },
+  "blog": {
+    "text": "blog",
+    "icon": "blog.png",
+    "href": "https://blog.oriontechdigital.com/"
+  },
+  "contact": "oriontechdigital@gmail.com"
 }

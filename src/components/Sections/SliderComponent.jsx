@@ -1,8 +1,7 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import data from "../../data.json";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import data from '../../data.json';
 
 function SliderComponent() {
   const settings = {
@@ -35,7 +34,7 @@ function SliderComponent() {
     ],
   };
 
-  const sliderData = [...data["section-slider"], ...data["section-slider"]];
+  const sliderData = [...data['section-slider'], ...data['section-slider']];
 
   return (
     <section id="slider">
@@ -45,7 +44,7 @@ function SliderComponent() {
             <div key={index} className="container flex items-center">
               <div
                 className="flex justify-center items-center"
-                style={{ height: "5rem" }}
+                style={{ height: '5rem' }}
               >
                 <img
                   height={64}

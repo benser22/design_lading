@@ -1,42 +1,44 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import data from "../../data.json";
-import Layout from "../ui/Layout";
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import data from '../../data.json';
+import Layout from '../ui/Layout';
+import PropTypes from 'prop-types';
 
 const How = () => {
-  const timelineData = data["section-how"].timeline;
+  const timelineData = data['section-how'].timeline;
   const [visibleIndex, setVisibleIndex] = useState(-1);
 
   return (
-    <section id="how">
-      <Layout>
-        <div className="flex justify-center pt-10">
-          <div className="px-4 py-10">
-            <h1 className="text-center text-blue-custom font-bold text-xl pb-4 lg:py-20 mini:text-2xl sm:text-3xl md:text-[48px]">
-              {data["section-how"].title}
+    <Layout>
+      <div className="flex justify-center py-10 sm:pt-0 pb-20">
+        <div className="px-4">
+          <section id="how">
+            <h1 className="text-center text-blue-custom font-bold text-xl pb-4 lg:py-10 mini:text-2xl sm:text-3xl md:text-[48px]">
+              {data['section-how'].title}
             </h1>
-            <div className="grid gap-6">
-              {Object.keys(timelineData).map((key, index) => {
-                const stage = timelineData[key];
-                return (
-                  <TimelineItem
-                    key={index}
-                    index={index}
-                    stage={stage}
-                    visibleIndex={visibleIndex}
-                    setVisibleIndex={setVisibleIndex}
-                    timelineData={timelineData}
-                  />
-                );
-              })}
-            </div>
+          </section>
+          <div className="grid gap-6">
+            {Object.keys(timelineData).map((key, index) => {
+              const stage = timelineData[key];
+              return (
+                <TimelineItem
+                  key={index}
+                  index={index}
+                  stage={stage}
+                  visibleIndex={visibleIndex}
+                  setVisibleIndex={setVisibleIndex}
+                  timelineData={timelineData}
+                />
+              );
+            })}
           </div>
         </div>
-      </Layout>
-    </section>
+      </div>
+    </Layout>
   );
 };
+
 const TimelineItem = ({
   index,
   stage,
@@ -53,7 +55,7 @@ const TimelineItem = ({
   }, [inView, index, visibleIndex, setVisibleIndex]);
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 80 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -67,7 +69,7 @@ const TimelineItem = ({
       <motion.div
         ref={ref}
         initial="hidden"
-        animate={visibleIndex >= index ? "visible" : "hidden"}
+        animate={visibleIndex >= index ? 'visible' : 'hidden'}
         variants={itemVariants}
         transition={itemTransition}
         className="grid grid-cols-3 sm:gap-4 relative"
@@ -78,7 +80,7 @@ const TimelineItem = ({
             alt={stage.alt}
             className="w-screen h-auto rounded-lg ml-[8vw] sm:ml-[12vw] 2xl:ml-0"
             style={{
-              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",
+              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.5)',
             }}
           />
         </div>
@@ -90,8 +92,8 @@ const TimelineItem = ({
             <div
               className="absolute inset-y-0 left-1/2 w-0.5 mt-8"
               style={{
-                transform: "translateX(-50%)",
-                borderLeft: "1px dotted #B4B4B4",
+                transform: 'translateX(-50%)',
+                borderLeft: '1px dotted #B4B4B4',
                 zIndex: -1,
               }}
             ></div>
@@ -105,7 +107,7 @@ const TimelineItem = ({
           </div>
           <p
             className="text-blue-custom text-[10px] md:text-[12px] lg:text-[16px]"
-            style={{ lineHeight: "normal" }}
+            style={{ lineHeight: 'normal' }}
           >
             {stage.subtitle}
           </p>
@@ -116,12 +118,12 @@ const TimelineItem = ({
             >
               <img
                 width={16}
-                src={data["section-how"]["checks-icon"].url}
-                alt={data["section-how"]["checks-icon"].alt}
+                src={data['section-how']['checks-icon'].url}
+                alt={data['section-how']['checks-icon'].alt}
               ></img>
               <p
                 className="text-blue-custom text-[8px] sm:text-md md:text-[14px]"
-                style={{ lineHeight: "normal" }}
+                style={{ lineHeight: 'normal' }}
               >
                 {check}
               </p>
@@ -131,6 +133,14 @@ const TimelineItem = ({
       </motion.div>
     </section>
   );
+};
+
+TimelineItem.propTypes = {
+  index: PropTypes.number.isRequired,
+  stage: PropTypes.object.isRequired,
+  visibleIndex: PropTypes.number.isRequired,
+  setVisibleIndex: PropTypes.func.isRequired,
+  timelineData: PropTypes.object.isRequired,
 };
 
 export default How;

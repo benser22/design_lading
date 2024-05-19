@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
-import data from "../../data.json";
+import { useState } from 'react';
+import { Link } from 'react-scroll';
+import data from '../../data.json';
+import PropTypes from 'prop-types';
 
 const MenuMobile = ({ isOpen, onClick }) => {
   const [isOpenDrop, setIsOpenDrop] = useState({});
@@ -15,10 +16,10 @@ const MenuMobile = ({ isOpen, onClick }) => {
   return (
     <div
       className={`${
-        isOpen ? "flex fadeIn" : "hidden"
+        isOpen ? 'flex fadeIn' : 'hidden'
       } w-full min-h-screen fixed inset-0 md:hidden scroll-auto`}
       onClick={onClick}
-      style={{ background: "rgba(0,0,0,0.3)" }}
+      style={{ background: 'rgba(0,0,0,0.3)' }}
     >
       <ul
         className={`fixed left-0 top-0 px-4 py-5 h-screen w-[60vw] flex flex-col gap-4 
@@ -27,15 +28,15 @@ const MenuMobile = ({ isOpen, onClick }) => {
         <div className="flex">
           <a href="/">
             <img
-              src={data["section-header"].logo.image.url}
-              alt={data["section-header"].logo.image.alt}
+              src={data['section-header'].logo.image.url}
+              alt={data['section-header'].logo.image.alt}
               className="h-[36px] cursor-pointer mx-auto mt-4"
             />
             <hr className="mt-6 w-[50vw]"></hr>
           </a>
         </div>
         <div className="ml-[2vw] flex flex-col gap-12 mt-6 w-full">
-          {data["section-header"].links.map((item, index) => (
+          {data['section-header'].links.map((item, index) => (
             <RenderLink
               key={index}
               link={item}
@@ -43,31 +44,31 @@ const MenuMobile = ({ isOpen, onClick }) => {
               isOpenDrop={isOpenDrop}
             />
           ))}
-          <a href="#" target="_blank">
+          <a href={data['section-header']['blog-ref']} target="_blank">
             <div className="flex items-center gap-2">
-              {data["section-header"]["login-icon"] && (
+              {data['section-header']['blog-icon'] && (
                 <img
-                  src={data["section-header"]["login-icon"]}
-                  alt={data["section-header"].login}
+                  src={data['section-header']['blog-icon']}
+                  alt={data['section-header'].blog}
                   className="w-[26px] h-[26px]"
                 />
               )}
               <p className="min-w-max text-md hover:text-red-custom active:text-red-custom">
-                {data["section-header"].login}
+                {data['section-header'].blog}
               </p>
             </div>
           </a>
-          <a href="#" target="_blank">
+          <a href={`mailto:${data.contact}?subject=Contact`}>
             <div className="flex items-center gap-2">
-              {data["section-header"]["login-button-icon"] && (
+              {data['section-header']['contact-button-icon'] && (
                 <img
-                  src={data["section-header"]["login-button-icon"]}
-                  alt={data["section-header"]["login-button"]}
+                  src={data['section-header']['contact-button-icon']}
+                  alt={data['section-header']['contact-button']}
                   className="w-[26px] h-[26px]"
                 />
               )}
               <button className="mr-auto min-w-max text-md hover:text-red-custom active:text-red-custom">
-                {data["section-header"]["login-button"]}
+                {data['section-header']['contact-button']}
               </button>
             </div>
           </a>
@@ -109,14 +110,14 @@ function RenderLink({ link, handleDropdownToggle, isOpenDrop }) {
             </p>
             {link.isDropdown && (
               <img
-                src={data["section-header"]["dropdow-icon"].url}
-                alt={data["section-header"]["dropdow-icon"].alt}
+                src={data['section-header']['dropdow-icon'].url}
+                alt={data['section-header']['dropdow-icon'].alt}
                 className="h-[6px] mr-2"
                 style={{
                   transform: isOpenDrop[link.id]
-                    ? "rotate(180deg)"
-                    : "rotate(0deg)",
-                  transition: "transform 0.2s ease-in-out",
+                    ? 'rotate(180deg)'
+                    : 'rotate(0deg)',
+                  transition: 'transform 0.2s ease-in-out',
                 }}
               />
             )}
@@ -143,5 +144,16 @@ function RenderLink({ link, handleDropdownToggle, isOpenDrop }) {
     </div>
   );
 }
+
+RenderLink.propTypes = {
+  link: PropTypes.object.isRequired,
+  handleDropdownToggle: PropTypes.func.isRequired,
+  isOpenDrop: PropTypes.object.isRequired,
+};
+
+MenuMobile.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default MenuMobile;
